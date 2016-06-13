@@ -68,6 +68,7 @@ class vault (
   $service_options  = '',
   $num_procs        = $::vault::params::num_procs,
   $manage_service   = $::vault::params::manage_service,
+  $version          = $::vault::params::version,
 ) inherits ::vault::params {
   validate_hash($config_hash)
 
